@@ -121,7 +121,6 @@ docker-compose up --build
 ## 📦 Postman Collection
 
 A Postman collection is available to test all endpoints easily.  
-(You can export your collection as `.json` and include it in the repo.)
 
 ---
 
