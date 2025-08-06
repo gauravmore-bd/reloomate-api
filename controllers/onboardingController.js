@@ -1,4 +1,3 @@
-// GET /api/onboarding
 exports.getOnboardingSteps = (req, res) => {
   const steps = [
     {
