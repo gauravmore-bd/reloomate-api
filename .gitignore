@@ -1,29 +1,15 @@
-# Node modules
+# Node
 node_modules/
-
-# Environment variables
 .env
-
-# Logs
 npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
 
-# OS generated files
+# System
 .DS_Store
 Thumbs.db
 
 # Docker
-*.local
+.dockerignore
 docker-compose.override.yml
 
-# VSCode
+# IDE
 .vscode/
-
-# Optional npm cache/debug files
-.cache/
-.nyc_output/
-
-# Optional: Ignore build artifacts
-dist/
-build/
