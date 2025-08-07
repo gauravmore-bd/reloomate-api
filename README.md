@@ -11,6 +11,12 @@ Built with:
 - MongoDB Atlas
 - JWT for authentication
 - Docker for easy deployment
+---
+
+## 🔗 Live Deployment
+
+🌐 **API Base URL**: [https://reloomate-api.onrender.com](https://reloomate-api.onrender.com)
+
 
 ---
 
@@ -59,6 +65,7 @@ cd reloomate-api
 PORT=5000
 MONGO_URI=your_mongodb_connection_string
 JWT_SECRET=your_jwt_secret
+CLIENT_URL=https://reloomate-api.onrender.com
 ```
 
 > ⚠️ Never commit this file to GitHub!
@@ -159,8 +166,9 @@ You can deploy this API on [Render](https://render.com) for temporary hosting (~
 ## 📦 Postman Collection
 
 A Postman collection is available to test all endpoints easily.  
-
+Make sure to use this base URL: [https://reloomate-api.onrender.com](https://reloomate-api.onrender.com)
 > You can import `RelooMate.postman_collection.json` from the root directory.
+
 
 ---
 
