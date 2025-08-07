@@ -87,6 +87,44 @@ docker-compose up --build
 
 ---
 
+## 🌐 🚀 Deployment on Render (Free Hosting)
+
+You can deploy this API on [Render](https://render.com) for temporary hosting (~2 weeks):
+
+### 🔸 Steps:
+
+1. Go to [https://dashboard.render.com](https://dashboard.render.com)
+2. Click **"New Web Service"**
+3. Connect your GitHub repo containing this project
+4. Fill the form:
+   - **Name**: `reloomate-api`
+   - **Environment**: `Node`
+   - **Build Command**: `npm install`
+   - **Start Command**: `node server.js`
+   - **Root Directory**: Leave blank
+5. Add the following **Environment Variables**:
+   - `PORT` → `5000`
+   - `MONGO_URI` → _Your MongoDB Atlas URI_
+   - `JWT_SECRET` → _Your custom secret string_
+
+6. **Whitelist Render IPs in MongoDB Atlas**  
+   Add the following IPs to your MongoDB Atlas network access:
+   ```
+   13.228.225.19
+   18.142.128.26
+   54.254.162.138
+   ```
+
+7. Click **Deploy Web Service**
+
+8. Once deployed, you will get a **public API URL** (e.g., `https://reloomate-api.onrender.com`)
+
+9. Test using Postman or your mobile frontend.
+
+✅ Now your backend is live and publicly accessible for testing/interviews!
+
+---
+
 ## 📫 API Endpoints
 
 ### 🔐 Auth
@@ -121,6 +159,8 @@ docker-compose up --build
 ## 📦 Postman Collection
 
 A Postman collection is available to test all endpoints easily.  
+
+> You can import `RelooMate.postman_collection.json` from the root directory.
 
 ---
 
